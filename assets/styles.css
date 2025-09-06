@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* White background */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4e598c; /* YInMn Blue */
+}
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.navbar-brand:hover {
+  color: #f9c784; /* Sunset */
+}
+
+/* Hero Section */
+header {
+  background-color: #fcaf58; /* Sandy Brown */
+  padding: 50px 0;
+  text-align: center;
+}
+header h1 {
+  color: #4e598c; /* YInMn Blue */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+header p {
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  border-color: #ff8c42; /* Pumpkin */
+}
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 220px;
+  object-fit: cover;
+}
+.card-title {
+  color: #4e598c; /* YInMn Blue */
+  font-weight: bold;
+}
+.card-text {
+  color: #4e598c; /* YInMn Blue */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #f9c784; /* Sunset */
+  border: none;
+  color: #4e598c; /* YInMn Blue text */
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #ff8c42; /* Pumpkin */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-success {
+  background-color: #fcaf58; /* Sandy Brown */
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.btn-success:hover {
+  background-color: #ff8c42; /* Pumpkin */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Property Details */
+#propertyDetails .card {
+  border-radius: 20px;
+  border: 1px solid #4e598c; /* YInMn Blue */
+}
+#propertyDetails img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 400px;
+  object-fit: cover;
+}
+#propertyDetails h2, #propertyDetails h3 {
+  color: #4e598c; /* YInMn Blue */
+  font-weight: bold;
+}
+#propertyDetails p {
+  color: #4e598c;
+}
+#propertyDetails p strong {
+  color: #4e598c;
+}
+
+/* Footer */
+footer {
+  background-color: #4e598c; /* YInMn Blue */
+  color: #ffffff;
+}
+footer a {
+  color: #f9c784; /* Sunset */
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
