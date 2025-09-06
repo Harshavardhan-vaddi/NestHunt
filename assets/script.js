@@ -1,16 +1,14 @@
-// Build individual property card
+
 function buildCard(property) {
-  // Column
+
   const col = document.createElement("div");
   col.className = "col-md-4";
 
-  // Card
   const card = document.createElement("div");
   card.className = "card h-100 shadow-sm";
   card.style.border = "1px solid #4e598c"; // YInMn Blue
   card.style.borderRadius = "15px";
 
-  // Image
   const img = document.createElement("img");
   img.src = property.image;
   img.className = "card-img-top";
@@ -20,7 +18,6 @@ function buildCard(property) {
   img.style.borderTopLeftRadius = "15px";
   img.style.borderTopRightRadius = "15px";
 
-  // Card body
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
 
@@ -39,7 +36,6 @@ function buildCard(property) {
   price.innerText = `Price: ₹${property.price}`;
   price.style.color = "#4e598c";
 
-  // View Details button
   const btn = document.createElement("a");
   btn.className = "btn mt-2";
   btn.href = `property.html?id=${property.id}`;
@@ -58,11 +54,10 @@ function buildCard(property) {
   btn.onmouseout = () => {
     btn.style.transform = "translateY(0)";
     btn.style.boxShadow = "none";
-    btn.style.backgroundColor = "#f9c784"; // Sunset
+    btn.style.backgroundColor = "#f9c784";
     btn.style.color = "#4e598c";
   };
 
-  // Append elements
   cardBody.appendChild(title);
   cardBody.appendChild(loc);
   cardBody.appendChild(price);
@@ -75,7 +70,6 @@ function buildCard(property) {
   return col;
 }
 
-// Render properties with filters
 function renderProperties(filterLocation = "", maxPrice = null) {
   const grid = document.getElementById("propertiesGrid");
   const noResults = document.getElementById("noResults");
@@ -105,7 +99,6 @@ function renderProperties(filterLocation = "", maxPrice = null) {
   props.forEach((p) => grid.appendChild(buildCard(p)));
 }
 
-// Initialize if container exists
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("propertiesGrid");
   const form = document.getElementById("searchForm");
@@ -123,3 +116,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
