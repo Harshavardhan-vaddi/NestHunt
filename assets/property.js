@@ -1,12 +1,10 @@
-// Get property id from URL
+
 const urlParams = new URLSearchParams(window.location.search);
 const propertyId = parseInt(urlParams.get("id"));
 
-// Get containers
 const detailsDiv = document.getElementById("propertyDetails");
 const notFoundDiv = document.getElementById("notFound");
 
-// Find property from data.js
 const property = properties.find((p) => p.id === propertyId);
 
 if (property) {
@@ -30,22 +28,22 @@ if (property) {
   `;
   detailsDiv.innerHTML = html;
 
-  // Button hover effect
   const btn = detailsDiv.querySelector("button");
   btn.onmouseover = () => {
-    btn.style.backgroundColor = "#ff8c42"; // Pumpkin
+    btn.style.backgroundColor = "#ff8c42";
     btn.style.color = "#ffffff";
     btn.style.transform = "translateY(-2px)";
     btn.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
   };
   btn.onmouseout = () => {
-    btn.style.backgroundColor = "#f9c784"; // Sunset
+    btn.style.backgroundColor = "#f9c784"; 
     btn.style.color = "#4e598c";
     btn.style.transform = "translateY(0)";
     btn.style.boxShadow = "none";
   };
 } else {
-  notFoundDiv.style.backgroundColor = "#ff8c42"; // Pumpkin
+  notFoundDiv.style.backgroundColor = "#ff8c42"; 
   notFoundDiv.style.color = "#ffffff";
   notFoundDiv.classList.remove("d-none");
 }
+
