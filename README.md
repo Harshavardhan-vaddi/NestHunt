@@ -6,9 +6,9 @@ A lightweight, elegant property search experience across India's top cities like
 
 **Features**
 
-**City Selector:**Instantly choose among key Indian cities (Hyderabad, Bangalore, Chennai).
+**City Selector:** Instantly choose among key Indian cities (Hyderabad, Bangalore, Chennai).
 
-**Rent Filters:**Quickly narrow down homes by rent tiers (e.g., ₹10,000; ₹20,000; ₹30,000).
+**Rent Filters:** Quickly narrow down homes by rent tiers (e.g., ₹10,000; ₹20,000; ₹30,000).
 
 **Clean and Responsive Design:** A minimal interface designed for ease of navigation and clarity.
 
@@ -23,12 +23,12 @@ Frontend	Backend	Hosting	Notes
 HTML, CSS, JavaScript	(Optional API)	GitHub Pages	Pure client-side for now.
 Future Enhancements
 
-**Dynamic Listings:**Integrate real backend or API to fetch and display actual property data.
+**Dynamic Listings:** Integrate real backend or API to fetch and display actual property data.
 
 **Advanced Filters:** Add filter options like location zones, 1BHK vs 2BHK, amenities, etc.
 
-**User Authentication:**Allow users to save favorites or contact property owners.
+**User Authentication:** Allow users to save favorites or contact property owners.
 
-**Map Integration:**Visualize properties via Google Maps or OpenStreetMap.
+**Map Integration:** Visualize properties via Google Maps or OpenStreetMap.
 
 **Responsive Layout:** Optimize for mobile screen sizes and touch-friendly interface.
